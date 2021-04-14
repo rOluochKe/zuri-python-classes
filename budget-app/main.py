@@ -15,34 +15,38 @@ class Budget:
 
         select_options = int(input('Please select a category:'))
         if(select_options == 1):
-          print('You selected option %s' % select_options)
+          print('You selected category %s' % select_options)
 
-          self.deposit()
+          self.deposit(food, cloth, entertainment)
 
         elif(select_options == 2):
-          print('You selected option %s' % select_options)
+          print('You selected category %s' % select_options)
 
-          self.withdraw()
+          self.withdraw(food, cloth, entertainment)
 
         elif(select_options == 3):
-          print('You selected option %s' % select_options)
+          print('You selected category %s' % select_options)
 
-          self.balance()
+          self.balance(food, cloth, entertainment)
 
         elif(select_options == 4):
-          print('You selected option %s' % select_options)
+          print('You selected category %s' % select_options)
 
-          self.transfer()
+          self.transfer(food, cloth, entertainment)
 
         else:
-          print('Invalid option, please try again')
+          print('Invalid category, please try again')
 
 
-  def deposit(self):
+  def deposit(self, food, cloth, entertainment):
 
-    deposit_food_amount = int(self.food)
-    deposit_cloth_amount = int(self.cloth)
-    deposit_entertainment_amount = int(self.entertainment)
+    self.food = food
+    self.cloth = cloth
+    self.entertainment = entertainment
+
+    deposit_food_amount = food
+    deposit_cloth_amount = cloth
+    deposit_entertainment_amount = entertainment
 
     print('**********************************************************')
     print('Total amount to deposit for food %s' % deposit_food_amount)
@@ -50,11 +54,15 @@ class Budget:
     print('Total amount to deposit for entertainment %s' % deposit_entertainment_amount)
     print('**********************************************************')
 
-  def withdraw(self):
+  def withdraw(self, food, cloth, entertainment):
 
-    withdraw_food_amount = int(self.food)
-    withdraw_cloth_amount = int(self.cloth)
-    withdraw_entertainment_amount = int(self.entertainment)
+    self.food = food
+    self.cloth = cloth
+    self.entertainment = entertainment
+
+    withdraw_food_amount = food
+    withdraw_cloth_amount = cloth
+    withdraw_entertainment_amount = entertainment
 
     print('==========================================================')
     print('Total amount to withdraw for food %s' % withdraw_food_amount)
@@ -62,10 +70,15 @@ class Budget:
     print('Total amount to withdraw for entertainment %s' % withdraw_entertainment_amount)
     print('==========================================================')
 
-  def balance(self):
-    balance_food_amount = int(self.food)
-    balance_cloth_amount = int(self.cloth)
-    balance_entertainment_amount = int(self.entertainment)
+  def balance(self, food, cloth, entertainment):
+
+    self.food = food
+    self.cloth = cloth
+    self.entertainment = entertainment
+
+    balance_food_amount = food
+    balance_cloth_amount = cloth
+    balance_entertainment_amount = entertainment
 
     print('**********************************************************')
     print('Total balance for food %s' % balance_food_amount)
@@ -73,10 +86,15 @@ class Budget:
     print('Total balance for entertainment %s' % balance_entertainment_amount)
     print('**********************************************************')
 
-  def transfer(self):
-    transfer_food_amount = int(self.food)
-    transfer_cloth_amount = int(self.cloth)
-    transfer_entertainment_amount = int(self.entertainment)
+  def transfer(self, food, cloth, entertainment):
+
+    self.food = food
+    self.cloth = cloth
+    self.entertainment = entertainment
+
+    transfer_food_amount = food
+    transfer_cloth_amount = cloth
+    transfer_entertainment_amount = entertainment
 
     print('==========================================================')
     print('Total amount to transfer for food %s' % transfer_food_amount)
