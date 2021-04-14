@@ -49,9 +49,7 @@ class Budget:
     deposit_entertainment_amount = entertainment
 
     print('**********************************************************')
-    print('Total amount to deposit for food %s' % deposit_food_amount)
-    print('Total amount to deposit for cloth %s' % deposit_cloth_amount)
-    print('Total amount to deposit for entertainment %s' % deposit_entertainment_amount)
+    print('Total amount to deposit for food', deposit_food_amount, 'cloth', deposit_cloth_amount, 'and entertainment', deposit_entertainment_amount)
     print('**********************************************************')
 
   def withdraw(self, food, cloth, entertainment):
@@ -65,9 +63,7 @@ class Budget:
     withdraw_entertainment_amount = entertainment
 
     print('==========================================================')
-    print('Total amount to withdraw for food %s' % withdraw_food_amount)
-    print('Total amount to withdraw for cloth %s' % withdraw_cloth_amount)
-    print('Total amount to withdraw for entertainment %s' % withdraw_entertainment_amount)
+    print('Total amount to withdraw for food', withdraw_food_amount, 'cloth', withdraw_cloth_amount, 'and entertainment', withdraw_entertainment_amount)
     print('==========================================================')
 
   def balance(self, food, cloth, entertainment):
@@ -81,9 +77,7 @@ class Budget:
     balance_entertainment_amount = entertainment
 
     print('**********************************************************')
-    print('Total balance for food %s' % balance_food_amount)
-    print('Total balance for cloth %s' % balance_cloth_amount)
-    print('Total balance for entertainment %s' % balance_entertainment_amount)
+    print('Total balance for food', balance_food_amount, 'cloth', balance_cloth_amount, 'and entertainment', balance_entertainment_amount)
     print('**********************************************************')
 
   def transfer(self, food, cloth, entertainment):
@@ -97,9 +91,7 @@ class Budget:
     transfer_entertainment_amount = entertainment
 
     print('==========================================================')
-    print('Total amount to transfer for food %s' % transfer_food_amount)
-    print('Total amount to transfer for cloth %s' % transfer_cloth_amount)
-    print('Total amount to transfer for entertainment %s' % transfer_entertainment_amount)
+    print('Total amount to transfer for food', transfer_food_amount, 'cloth', transfer_cloth_amount, 'and entertainment', transfer_entertainment_amount)
     print('==========================================================')
 
 budget_one = Budget(500, 200, 150)
